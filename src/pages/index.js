@@ -28,7 +28,7 @@ const MainWrapper = styled.main`
   border-radius: 5px;
   padding: 10px;
   box-shadow: inset 0 3px 0 0 rgba(98, 98, 98, 1),
-    0 5px 3px 5px rgba(34, 34, 34, 0.75),
+    0 10px 3px 10px rgba(34, 34, 34, 0.75),
     0 20px 40px 40px rgba(34, 34, 34, 0.45);
 
   .main__h1 {
@@ -40,6 +40,6 @@ const MainWrapper = styled.main`
   }
 
   .main_p {
-    font-size: var(--text-6);
+    font-size: var(--text-7);
   }
 `
