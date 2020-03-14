@@ -1,9 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import Header from "./header"
-import "./layout.css"
+import Header from './header'
+import './layout.css'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,10 +18,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      {/* Navbar */}
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
       </div>
+      {/* Footer */}
     </>
   )
 }
