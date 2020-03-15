@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
+import Navbar from './navbar'
 import './layout.css'
 
 const Layout = ({ children }) => {
@@ -18,8 +18,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      {/* Navbar */}
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Navbar />
       <div>
         <main>{children}</main>
       </div>
@@ -29,7 +28,7 @@ const Layout = ({ children }) => {
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 }
 
 export default Layout

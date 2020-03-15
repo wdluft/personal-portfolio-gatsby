@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Will Luft`,
     description: `Personal website made by and for Will Luft`,
-    author: `@IAmWillDL`,
+    author: `@IAmWillDL`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -10,8 +10,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -25,10 +25,11 @@ module.exports = {
         background_color: `#00FFFF`,
         theme_color: `#00FFFF`,
         display: `minimal-ui`,
-      },
-    },
+        icon: `src/images/logo2.png`
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ],
+  ]
 }
