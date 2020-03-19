@@ -27,11 +27,11 @@ const MainWrapper = styled.main`
   margin: 30vh auto;
   border-radius: 5px;
   padding: 10px;
-  box-shadow: var(--elevation-5);
+  box-shadow: inset 0 3px 0 0 rgba(110, 110, 110, 1),
+    0 10px 3px 10px rgba(0, 0, 0, 0.75), 0 20px 40px 40px rgba(0, 0, 0, 0.45);
 
   .main__h1 {
-    font-size: var(--waytoobig-text);
-    font-weight: bold;
+    font-size: var(--extraLargeFontSize);
   }
 
   .main__span {
@@ -39,6 +39,6 @@ const MainWrapper = styled.main`
   }
 
   .main_p {
-    font-size: var(--lg-text);
+    font-size: var(--mediumFontSize);
   }
 `
