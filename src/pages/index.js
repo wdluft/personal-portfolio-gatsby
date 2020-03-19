@@ -27,9 +27,7 @@ const MainWrapper = styled.main`
   margin: 30vh auto;
   border-radius: 5px;
   padding: 10px;
-  box-shadow: inset 0 3px 0 0 rgba(98, 98, 98, 1),
-    0 10px 3px 10px rgba(34, 34, 34, 0.75),
-    0 20px 40px 40px rgba(34, 34, 34, 0.45);
+  box-shadow: var(--elevation-5);
 
   .main__h1 {
     font-size: var(--waytoobig-text);
@@ -37,7 +35,7 @@ const MainWrapper = styled.main`
   }
 
   .main__span {
-    color: var(--primary-color-3);
+    color: var(--primary-3);
   }
 
   .main_p {
