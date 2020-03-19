@@ -22,7 +22,7 @@ const IndexPage = () => (
 export default IndexPage
 
 const MainWrapper = styled.main`
-  background: var(--gray-color-8);
+  background: var(--gray-4);
   max-width: 748px;
   margin: 30vh auto;
   border-radius: 5px;
@@ -32,14 +32,15 @@ const MainWrapper = styled.main`
     0 20px 40px 40px rgba(34, 34, 34, 0.45);
 
   .main__h1 {
-    font-size: var(--text-12);
+    font-size: var(--waytoobig-text);
+    font-weight: bold;
   }
 
   .main__span {
-    color: var(--primary-color-5);
+    color: var(--primary-color-3);
   }
 
   .main_p {
-    font-size: var(--text-7);
+    font-size: var(--lg-text);
   }
 `
