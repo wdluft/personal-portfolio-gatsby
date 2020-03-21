@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import Navbar from './navbar'
+import Socials from './socials'
 import './layout.css'
+import styled from 'styled-components'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -19,10 +21,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <div>
+      <LayoutMainWrapper className="layout">
         <main>{children}</main>
-      </div>
-      {/* Footer */}
+      </LayoutMainWrapper>
+      <Socials />
     </>
   )
 }
@@ -32,3 +34,11 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+const LayoutMainWrapper = styled.div`
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`

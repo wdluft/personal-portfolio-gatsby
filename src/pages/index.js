@@ -7,38 +7,37 @@ import SEO from '../components/seo'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <MainWrapper className="main">
-      <h1 className="main__h1">
-        I am <span className="main__span">Will Luft</span>
+    <SectionWrapper className="section">
+      <h1 className="section__h1">
+        I am <span className="section__span">Will Luft</span>
       </h1>
-      <p className="main_p">
+      <p className="section_p">
         I build websites, do customer support, and play sports and Magic the
         Gathering
       </p>
-    </MainWrapper>
+    </SectionWrapper>
   </Layout>
 )
 
 export default IndexPage
 
-const MainWrapper = styled.main`
-  background: var(--gray-4);
+const SectionWrapper = styled.section`
+  background: var(--gray-5);
   max-width: 748px;
-  margin: 30vh auto;
+  margin: 25vh auto 0;
   border-radius: 5px;
   padding: 10px;
-  box-shadow: inset 0 3px 0 0 rgba(110, 110, 110, 1),
-    0 10px 3px 10px rgba(0, 0, 0, 0.75), 0 20px 40px 40px rgba(0, 0, 0, 0.45);
+  box-shadow: var(--massiveShadow);
 
-  .main__h1 {
+  .section__h1 {
     font-size: var(--extraLargeFontSize);
   }
 
-  .main__span {
+  .section__span {
     color: var(--primary-3);
   }
 
-  .main_p {
+  .section_p {
     font-size: var(--mediumFontSize);
   }
 `
