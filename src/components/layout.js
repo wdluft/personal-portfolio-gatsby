@@ -36,9 +36,9 @@ Layout.propTypes = {
 export default Layout
 
 const LayoutMainWrapper = styled.div`
-  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 75vh;
 `

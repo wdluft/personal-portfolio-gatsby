@@ -34,7 +34,6 @@ const NavWrapper = styled.nav`
   top: 0;
   left: 0;
   background: rgba(34, 34, 34, 0.85);
-  box-shadow: var(--elevation-3);
 
   .nav__img-logo {
     width: 54px;

@@ -4,9 +4,9 @@ import styled from 'styled-components'
 const Socials = () => {
   return (
     <SocialWrapper>
-      <h1 className="footer__header">Follow Me</h1>
+      <h2 className="footer__heading">Follow Me</h2>
       <ul className="footer__list">
-        <li>
+        <li className="footer__listItem">
           <a
             href="https://twitter.com/iamwilldl"
             target="_blank"
@@ -16,7 +16,7 @@ const Socials = () => {
             Twitter
           </a>
         </li>
-        <li>
+        <li className="footer__listItem">
           <a
             href="https://github.com/wdluft"
             target="_blank"
@@ -26,7 +26,7 @@ const Socials = () => {
             Github
           </a>
         </li>
-        <li>
+        <li className="footer__listItem">
           <a
             href="https://www.linkedin.com/in/william-luft-42ab9258/"
             target="_blank"
@@ -48,15 +48,23 @@ const SocialWrapper = styled.footer`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--bg-color);
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 
-  .footer__header {
-    grid-column: 1/-1;
+  .footer__heading {
+    margin-bottom: 0;
   }
 
   .footer__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer__listItem {
+    margin: 0.75rem;
+
+    a {
+      padding: 5px;
+    }
   }
 `
