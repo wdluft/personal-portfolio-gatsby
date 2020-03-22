@@ -30,8 +30,6 @@ font-family: 'Work Sans', sans-serif; */
   --bg-color: var(--gray-6);
   --bg-fill: var(--primary-3);
 
-  /* Card - border-radius, bg, color, button radius */
-
   /* Fonts */
   --body-font: 'Playfair Display', serif;
   --heading-font: 'Work Sans', sans-serif;
@@ -67,6 +65,11 @@ font-family: 'Work Sans', sans-serif; */
 
   /* Margin */
   --margin: 1.5rem 0 1rem;
+
+  /* Card - border-radius, bg, color, button radius */
+  --cardBorderRadius: 5px;
+  --cardBgColor: var(--gray-5);
+  --cardColor: var(--gray-0);
 }
 
 * {
