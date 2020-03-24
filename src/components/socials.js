@@ -5,43 +5,41 @@ import { Card } from './utils/card'
 
 const Socials = () => {
   return (
-    <Card>
-      <SocialWrapper>
-        <h2 className="footer__heading">Follow Me</h2>
-        <ul className="footer__list">
-          <li className="footer__listItem">
-            <a
-              href="https://twitter.com/iamwilldl"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="twitter"
-            >
-              Twitter
-            </a>
-          </li>
-          <li className="footer__listItem">
-            <a
-              href="https://github.com/wdluft"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="github"
-            >
-              Github
-            </a>
-          </li>
-          <li className="footer__listItem">
-            <a
-              href="https://www.linkedin.com/in/william-luft-42ab9258/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="linkedin"
-            >
-              LinkedIn
-            </a>
-          </li>
-        </ul>
-      </SocialWrapper>
-    </Card>
+    <SocialWrapper>
+      <h2 className="footer__heading">Follow Me</h2>
+      <ul className="footer__list">
+        <li className="footer__listItem">
+          <a
+            href="https://twitter.com/iamwilldl"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="twitter"
+          >
+            Twitter
+          </a>
+        </li>
+        <li className="footer__listItem">
+          <a
+            href="https://github.com/wdluft"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="github"
+          >
+            Github
+          </a>
+        </li>
+        <li className="footer__listItem">
+          <a
+            href="https://www.linkedin.com/in/william-luft-42ab9258/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="linkedin"
+          >
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </SocialWrapper>
   )
 }
 
