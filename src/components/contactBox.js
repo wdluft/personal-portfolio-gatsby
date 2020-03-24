@@ -14,9 +14,9 @@ const ContactBox = ({ contactType, contactValue, contactLink }) => {
 export default ContactBox
 
 const StyledContactBox = styled.div`
-  font-size: 1.75rem;
+  font-size: var(--largeFontSize);
   border: 3px var(--gray-1) solid;
-  padding: 1.25rem 2rem;
+  padding: 1rem 1.75rem;
   margin-bottom: 3rem;
   transition: 0.75s;
   background: var(--primary-3);
