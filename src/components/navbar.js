@@ -13,8 +13,12 @@ const Navbar = () => {
       </div>
       <div className="nav__links">
         <ul className="nav__links__ul">
-          <li className="nav__links__ul__li">About</li>
-          <li className="nav__links__ul__li">Contact</li>
+          <li className="nav__links__ul__li">
+            <Link to="/about">About</Link>
+          </li>
+          <li className="nav__links__ul__li">
+            <Link to="/contact">Contact</Link>
+          </li>
         </ul>
       </div>
     </NavWrapper>
