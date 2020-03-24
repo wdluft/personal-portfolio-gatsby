@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Card } from './utils/card'
-
 const Socials = () => {
   return (
     <SocialWrapper>

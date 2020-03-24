@@ -37,7 +37,6 @@ const NavWrapper = styled.nav`
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(34, 34, 34, 0.85);
 
   .nav__img-logo {
     width: 54px;
