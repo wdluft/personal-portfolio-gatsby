@@ -10,7 +10,6 @@ const AboutPage = () => (
     <Layout>
       <SEO title="About" />
       <AboutWrapper className="aboutDiv">
-        <h1>About</h1>
         <AboutIntro />
       </AboutWrapper>
     </Layout>
