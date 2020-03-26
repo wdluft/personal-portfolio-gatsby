@@ -4,8 +4,11 @@ import { Link } from 'gatsby'
 import logoImage from '../images/logo2.svg'
 
 const Navbar = () => {
+  const currentPath = document.title
+
   return (
     <NavWrapper>
+      <p>{currentPath}</p>
       <div>
         <Link to="/">
           <img src={logoImage} alt="Logo" className="nav__img-logo" />
@@ -14,10 +17,14 @@ const Navbar = () => {
       <div className="nav__links">
         <ul className="nav__links__ul">
           <li className="nav__links__ul__li">
-            <Link to="/about">About</Link>
+            <Link to="/about" activeClassName="active">
+              About
+            </Link>
           </li>
           <li className="nav__links__ul__li">
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" activeClassName="active">
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
@@ -49,5 +56,9 @@ const NavWrapper = styled.nav`
 
   .nav__links__ul__li {
     margin: 0 15px;
+  }
+
+  .active {
+    border-bottom: 2px solid var(--secondary-3);
   }
 `
