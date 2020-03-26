@@ -37,14 +37,14 @@ const NavWrapper = styled.nav`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 75px;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
 
   .nav__img-logo {
-    width: 54px;
+    width: 75px;
   }
 
   .nav__links__ul {
@@ -56,6 +56,7 @@ const NavWrapper = styled.nav`
     margin: 0 15px;
 
     a {
+      font-size: var(--largeFontSize);
       color: var(--gray-1);
 
       &:hover {
@@ -73,5 +74,6 @@ const NavWrapper = styled.nav`
 
   .active {
     border-bottom: 2px solid var(--primary-3);
+    font-weight: bold;
   }
 `
