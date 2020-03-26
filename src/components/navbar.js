@@ -4,11 +4,8 @@ import { Link } from 'gatsby'
 import logoImage from '../images/logo2.svg'
 
 const Navbar = () => {
-  const currentPath = document.title
-
   return (
     <NavWrapper>
-      <p>{currentPath}</p>
       <div>
         <Link to="/">
           <img src={logoImage} alt="Logo" className="nav__img-logo" />
@@ -34,6 +31,7 @@ const Navbar = () => {
 
 export default Navbar
 
+// TODO: remove line from links on hover to show border instead
 const NavWrapper = styled.nav`
   display: flex;
   flex-direction: row;
