@@ -41,4 +41,8 @@ const AboutIntroWrapper = styled.div`
     margin: auto;
     box-shadow: var(--elevation-1);
   }
+
+  p {
+    font-size: var(--mediumFontSize);
+  }
 `
