@@ -18,7 +18,7 @@ const StyledContactBox = styled.div`
   border: 3px var(--gray-1) solid;
   padding: 1rem 1.75rem;
   margin-bottom: 3rem;
-  transition: 0.75s;
+  transition: padding 0.75s;
   background: var(--primary-3);
   box-shadow: var(--elevation-4);
 
@@ -28,9 +28,11 @@ const StyledContactBox = styled.div`
 
   &:hover {
     padding: 0.5rem 1.5rem;
+    background: var(--secondary-3);
+    text-decoration: underline;
 
     a {
-      color: var(--gray-6);
+      color: var(--gray-1);
     }
   }
 
