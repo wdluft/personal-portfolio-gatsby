@@ -53,6 +53,7 @@ const SocialWrapper = styled.footer`
 
   .footer__heading {
     margin-bottom: 0;
+    border-bottom: 3px solid var(--primary-3);
   }
 
   .footer__list {
