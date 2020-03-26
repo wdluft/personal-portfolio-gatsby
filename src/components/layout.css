@@ -140,7 +140,6 @@ h6 {
   font-family: var(--heading-font);
   line-height: 1.15;
   font-weight: bold;
-  margin: var(--margin);
 }
 
 h1,
@@ -176,7 +175,6 @@ h6 {
 p {
   font-family: var(--body-font);
   line-height: 2rem;
-  margin: 1rem 0;
 }
 
 a {

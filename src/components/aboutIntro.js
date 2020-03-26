@@ -10,9 +10,14 @@ const AboutIntro = () => {
       <img src={headshot} alt="Will Luft" />
       <div className="aboutP">
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus
-          tempora optio voluptate ex. Earum perferendis fugiat quisquam animi,
-          magni quos.
+          Hi, I'm Will Luft. I am a Customer Support Specialist for{' '}
+          <a href="https://www.donorschoose.org/">DonorsChoose</a>, helping
+          teachers and donors with any questions they have.
+        </p>
+        <p>I love playing soccer, volleyball, and Magic the Gathering.</p>
+        <p>
+          Please <Link to="/contact">reach out to me</Link> if you'd like to do
+          something together or chat.
         </p>
       </div>
     </AboutIntroWrapper>
@@ -23,7 +28,7 @@ export default AboutIntro
 
 const AboutIntroWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
   justify-content: center;
 
