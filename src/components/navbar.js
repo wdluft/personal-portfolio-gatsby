@@ -14,12 +14,12 @@ const Navbar = () => {
       <div className="nav__links">
         <ul className="nav__links__ul">
           <li className="nav__links__ul__li">
-            <Link to="/about" activeClassName="active">
+            <Link to="/about" activeClassName="active" className="about">
               About
             </Link>
           </li>
           <li className="nav__links__ul__li">
-            <Link to="/contact" activeClassName="active">
+            <Link to="/contact" activeClassName="active" className="contact">
               Contact
             </Link>
           </li>
@@ -54,9 +54,24 @@ const NavWrapper = styled.nav`
 
   .nav__links__ul__li {
     margin: 0 15px;
+
+    a {
+      color: var(--gray-1);
+
+      &:hover {
+        color: var(--gray-1);
+        text-decoration: none;
+        &.about {
+          border-bottom: 2px solid var(--secondary-3);
+        }
+        &.contact {
+          border-bottom: 2px solid var(--tertiary-3);
+        }
+      }
+    }
   }
 
   .active {
-    border-bottom: 2px solid var(--secondary-3);
+    border-bottom: 2px solid var(--primary-3);
   }
 `
