@@ -37,14 +37,14 @@ const NavWrapper = styled.nav`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 75px;
+  height: 50px;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
 
   .nav__img-logo {
-    width: 75px;
+    width: 50px;
   }
 
   .nav__links__ul {
