@@ -3,7 +3,7 @@
 font-family: 'Work Sans', sans-serif; */
 
 :root {
-  --primary-1: #e4ffff;
+  --primary-1: #c8ffff;
   --primary-2: #80ffff;
   --primary-3: #00ffff;
   --primary-4: #009999;
@@ -42,12 +42,12 @@ font-family: 'Work Sans', sans-serif; */
   --largeFontSize: 1.5rem;
   --doubleXLFontSize: 5rem;
   --extraLargeFontSize: 4rem;
-  --heading-one: 3rem;
-  --heading-two: 2.5rem;
+  --heading-2: 3rem;
+  --heading-1: 2.5rem;
   --heading-3: 2rem;
-  --heading-four: 1.5rem;
-  --heading-five: --var(--baseFontSize);
-  --heading-six: --var(--smallFontSize);
+  --heading-4: 1.5rem;
+  --heading-5: --var(--baseFontSize);
+  --heading-6: --var(--smallFontSize);
 
   /* Links */
   --linkColor: var(--tertiary-3);
@@ -156,22 +156,22 @@ nav {
 }
 
 h1 {
-  font-size: var(--heading-one);
+  font-size: var(--heading-1);
 }
 h2 {
-  font-size: var(--heading-two);
+  font-size: var(--heading-2);
 }
 h3 {
-  font-size: var(--heading-three);
+  font-size: var(--heading-3);
 }
 h4 {
-  font-size: var(--heading-four);
+  font-size: var(--heading-4);
 }
 h5 {
-  font-size: var(--heading-five);
+  font-size: var(--heading-5);
 }
 h6 {
-  font-size: var(--heading-six);
+  font-size: var(--heading-6);
 }
 
 p {

@@ -5,11 +5,11 @@ import PropTypes from 'prop-types'
 const ResumeItem = ({ position }) => {
   return (
     <ResumeItemWrapper>
-      <h4>{position.company}</h4>
+      <h3>{position.company}</h3>
       <h5>{position.position}</h5>
-      <p>
+      <h6>
         {position.start} - {position.end}
-      </p>
+      </h6>
       <p>{position.description}</p>
     </ResumeItemWrapper>
   )
@@ -28,5 +28,17 @@ const ResumeItemWrapper = styled.div`
   p {
     line-height: 1.75rem;
     font-size: var(--mediumFontSize);
+  }
+
+  h3 {
+    color: var(--primary-3);
+  }
+
+  h5 {
+    color: var(--primary-1);
+  }
+
+  h6 {
+    color: var(--primary-1);
   }
 `
