@@ -11,7 +11,9 @@ const AboutPage = () => (
     <Layout>
       <SEO title="About" />
       <AboutWrapper className="aboutDiv">
+        <h1>Who am I?</h1>
         <AboutIntro />
+        <h1>Resume</h1>
         <AboutResume />
       </AboutWrapper>
     </Layout>
@@ -25,4 +27,8 @@ const AboutWrapper = styled.div`
   margin: 100px auto 100px;
   display: flex;
   flex-direction: column;
+
+  h1 {
+    text-shadow: var(--elevation-1);
+  }
 `

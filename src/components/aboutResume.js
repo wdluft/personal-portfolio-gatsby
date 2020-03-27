@@ -8,12 +8,22 @@ const AboutResume = () => {
   const [resume] = useState(resumeInfo)
 
   return (
-    <div>
+    <ResumeWrapper>
       {resume.map(item => (
         <ResumeItem key={item.id} position={item} />
       ))}
-    </div>
+    </ResumeWrapper>
   )
 }
 
 export default AboutResume
+
+const ResumeWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding-top: 15px;
+  border-radius: 5px;
+  background: var(--gray-5);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.25), var(--elevation-3);
+  border-top: var(--primary-3) solid 10px;
+`

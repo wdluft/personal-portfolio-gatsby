@@ -6,7 +6,6 @@ import styled from 'styled-components'
 const AboutIntro = () => {
   return (
     <AboutIntroWrapper>
-      <h1>Who am I?</h1>
       <img src={headshot} alt="Will Luft" />
       <div className="aboutP">
         <p>
@@ -42,7 +41,18 @@ const AboutIntroWrapper = styled.div`
     box-shadow: var(--elevation-1);
   }
 
+  .aboutP {
+    padding-top: 15px;
+    border-radius: 5px;
+    background: var(--gray-5);
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.25), var(--elevation-3);
+    border-top: var(--primary-3) solid 10px;
+    padding-bottom: 1.5rem;
+  }
+
   p {
     font-size: var(--mediumFontSize);
+    line-height: 1.75rem;
+    padding-left: 1rem;
   }
 `
