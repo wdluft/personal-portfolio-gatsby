@@ -74,6 +74,5 @@ const NavWrapper = styled.nav`
 
   .active {
     border-bottom: 2px solid var(--primary-3);
-    font-weight: bold;
   }
 `
