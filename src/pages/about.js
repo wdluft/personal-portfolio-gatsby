@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import AboutIntro from '../components/aboutIntro'
+import AboutResume from '../components/aboutResume'
 
 const AboutPage = () => (
   <>
@@ -11,6 +12,7 @@ const AboutPage = () => (
       <SEO title="About" />
       <AboutWrapper className="aboutDiv">
         <AboutIntro />
+        <AboutResume />
       </AboutWrapper>
     </Layout>
   </>
