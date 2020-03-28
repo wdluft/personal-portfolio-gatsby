@@ -15,11 +15,11 @@ export default ContactBox
 
 const StyledContactBox = styled.div`
   font-size: var(--mediumFontSize);
-  border: 3px var(--gray-5) solid;
+  border: 3px var(--gray-1) solid;
   padding: 1rem 1.75rem;
   margin-bottom: 3rem;
   transition: padding 0.5s;
-  background: var(--tertiary-3);
+  background: var(--primary-3);
   box-shadow: var(--elevation-4);
 
   a {

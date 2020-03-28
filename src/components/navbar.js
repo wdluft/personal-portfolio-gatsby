@@ -10,7 +10,7 @@ const Navbar = () => {
     <NavWrapper>
       <div>
         <Link to="/">
-          <img src={logoPink} alt="Logo" className="nav__img-logo" />
+          <img src={logoBlue} alt="Logo" className="nav__img-logo" />
         </Link>
       </div>
       <div className="nav__links">
