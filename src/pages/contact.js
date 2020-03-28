@@ -21,8 +21,14 @@ export default ContactPage
 
 const ContactWrapper = styled.section`
   max-width: 1100px;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  h1 {
+    margin-bottom: 1rem;
+    text-shadow: var(--elevation-1);
+  }
 `

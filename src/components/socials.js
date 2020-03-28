@@ -49,7 +49,7 @@ const SocialWrapper = styled.footer`
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 
   .footer__heading {
     margin-bottom: 0;

@@ -7,14 +7,14 @@ const ContactBoxes = () => {
   return (
     <StyledContactBoxes>
       <ContactBox
-        contactType="Email"
-        contactValue="william.d.luft@gmail.com"
-        contactLink="mailto:william.d.luft@gmail.com"
-      />
-      <ContactBox
         contactType="Twitter"
         contactValue="@IAmWillDL"
         contactLink="https://twitter.com/iamwilldl"
+      />
+      <ContactBox
+        contactType="Email"
+        contactValue="william.d.luft@gmail.com"
+        contactLink="mailto:william.d.luft@gmail.com"
       />
     </StyledContactBoxes>
   )

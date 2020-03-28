@@ -24,7 +24,7 @@ export default AboutPage
 
 const AboutWrapper = styled.div`
   max-width: 960px;
-  margin: 100px auto 100px;
+  margin: 150px auto 25px;
   display: flex;
   flex-direction: column;
 

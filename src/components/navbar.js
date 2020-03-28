@@ -1,14 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import logoImage from '../images/logo2.svg'
+import logoBlue from '../images/logo-blue.svg'
+import logoGreen from '../images/logo-green.svg'
+import logoPink from '../images/logo-pink.svg'
 
 const Navbar = () => {
   return (
     <NavWrapper>
       <div>
         <Link to="/">
-          <img src={logoImage} alt="Logo" className="nav__img-logo" />
+          <img src={logoPink} alt="Logo" className="nav__img-logo" />
         </Link>
       </div>
       <div className="nav__links">
@@ -31,7 +33,6 @@ const Navbar = () => {
 
 export default Navbar
 
-// TODO: remove line from links on hover to show border instead
 const NavWrapper = styled.nav`
   display: flex;
   flex-direction: row;

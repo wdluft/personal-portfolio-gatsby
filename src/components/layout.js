@@ -9,11 +9,11 @@ import styled from 'styled-components'
 const Layout = ({ children }) => {
   return (
     <>
-      <Navbar />
-      <LayoutMainWrapper className="layout">
-        <main>{children}</main>
-      </LayoutMainWrapper>
-      <Socials />
+      <LayoutWrapper>
+        <Navbar />
+        <main className="layout__main">{children}</main>
+        <Socials />
+      </LayoutWrapper>
     </>
   )
 }
@@ -24,10 +24,14 @@ Layout.propTypes = {
 
 export default Layout
 
-const LayoutMainWrapper = styled.div`
+const LayoutWrapper = styled.div`
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  min-height: 75vh;
+
+  .layout__main {
+    justify-self: center;
+  }
 `

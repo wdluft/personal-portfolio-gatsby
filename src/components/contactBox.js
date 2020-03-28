@@ -14,12 +14,12 @@ const ContactBox = ({ contactType, contactValue, contactLink }) => {
 export default ContactBox
 
 const StyledContactBox = styled.div`
-  font-size: var(--largeFontSize);
-  border: 3px var(--gray-1) solid;
+  font-size: var(--mediumFontSize);
+  border: 3px var(--gray-5) solid;
   padding: 1rem 1.75rem;
   margin-bottom: 3rem;
   transition: padding 0.5s;
-  background: var(--primary-3);
+  background: var(--tertiary-3);
   box-shadow: var(--elevation-4);
 
   a {
@@ -28,12 +28,7 @@ const StyledContactBox = styled.div`
 
   &:hover {
     padding: 0.8rem 1.6rem;
-    background: var(--secondary-3);
     text-decoration: underline;
-
-    a {
-      color: var(--gray-1);
-    }
   }
 
   @media (max-width: 420px) {
