@@ -18,8 +18,9 @@ const Navbar = ({ pathName }) => {
   return (
     <NavWrapper>
       <div>
-        <Link to={'/'}>
+        <Link to={'/'} className="nav__link--home">
           <img src={currentLogo} alt="Logo" className="nav__img-logo" />
+          <h1 className="my-name">Will Luft</h1>
         </Link>
       </div>
       <div className="nav__links">
@@ -53,8 +54,29 @@ const NavWrapper = styled.nav`
   top: 0;
   left: 0;
 
-  .nav__img-logo {
-    width: 50px;
+  .nav__link--home {
+    display: flex;
+    align-items: center;
+
+    .nav__img-logo {
+      width: 50px;
+      z-index: 2;
+    }
+
+    .my-name {
+      transform: translate3d(-120%, 0, 0);
+      margin-left: 10px;
+      z-index: -1;
+      transition: all 0.75s cubic-bezier(0, 0.92, 1, 0.99);
+      font-size: 1.75rem;
+      color: var(--gray-1);
+      font-weight: normal;
+    }
+
+    &:hover {
+      text-decoration: none;
+      border: none;
+    }
   }
 
   .nav__links__ul {
@@ -91,6 +113,12 @@ const NavWrapper = styled.nav`
 
     &.contact {
       border-bottom: 3px solid var(--tertiary-3);
+    }
+  }
+
+  &:hover {
+    .my-name {
+      transform: translate3d(0, 0, 0);
     }
   }
 `
