@@ -19,7 +19,7 @@ const StyledContactBox = styled.div`
   padding: 1rem 1.75rem;
   margin-bottom: 3rem;
   transition: padding 0.5s;
-  background: var(--primary-3);
+  background: var(--tertiary-3);
   box-shadow: var(--elevation-4);
 
   a {
