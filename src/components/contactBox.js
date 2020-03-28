@@ -21,6 +21,8 @@ const StyledContactBox = styled.div`
   transition: padding 0.5s;
   background: var(--tertiary-3);
   box-shadow: var(--elevation-4);
+  border-radius: 5px;
+  cursor: pointer;
 
   a {
     color: var(--gray-6);
