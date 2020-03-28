@@ -13,7 +13,14 @@ const AboutIntro = () => {
           <a href="https://www.donorschoose.org/">DonorsChoose</a>, helping
           teachers and donors with any questions they have.
         </p>
-        <p>I love playing soccer, volleyball, and Magic the Gathering.</p>
+        <br />
+        <p>
+          To get my thoughts out of my head, I write for my blog,{' '}
+          <a href="https://www.becomebydoing.me">Become by Doing</a>. I'll write
+          about anytihng ranging from web development, to what's going on in the
+          world, to my personal philosophy.
+        </p>
+        <br />
         <p>
           Please <Link to="/contact">reach out to me</Link> if you'd like to do
           something together or chat.

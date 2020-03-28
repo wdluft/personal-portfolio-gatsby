@@ -32,7 +32,7 @@ const IndexPage = ({ location }) => {
 export default IndexPage
 
 const SectionWrapper = styled.section`
-  min-height: 75vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;

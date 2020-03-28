@@ -34,6 +34,5 @@ const AboutWrapper = styled.div`
 
   h1 {
     text-shadow: var(--elevation-1);
-    padding-bottom: 1rem;
   }
 `
