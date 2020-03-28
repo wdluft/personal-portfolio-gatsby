@@ -7,9 +7,9 @@ const ResumeItem = ({ position }) => {
     <ResumeItemWrapper>
       <h3>{position.company}</h3>
       <h5>{position.position}</h5>
-      <h6>
+      <h5>
         {position.start} - {position.end}
-      </h6>
+      </h5>
       <p>{position.description}</p>
     </ResumeItemWrapper>
   )
@@ -31,15 +31,11 @@ const ResumeItemWrapper = styled.div`
   }
 
   h3 {
-    /* color: var(--secondary-3); */
+    color: var(--primary-3);
     letter-spacing: 0.2rem;
   }
 
   h5 {
-    /* color: var(--secondary-3); */
-  }
-
-  h6 {
-    /* color: var(--secondary-3); */
+    font-weight: normal;
   }
 `
