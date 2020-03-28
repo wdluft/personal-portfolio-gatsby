@@ -1,10 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Socials = () => {
+const Socials = ({ pathName }) => {
+  console.log(pathName)
+  let pageColor = 'primary'
+  if (pathName === '/about') {
+    pageColor = 'secondary'
+  } else if (pathName === '/contact') {
+    pageColor = 'tertiary'
+  } else {
+    pageColor = 'primary'
+  }
+
   return (
     <SocialWrapper>
-      <h2 className="footer__heading">Follow Me</h2>
+      <h2 className={`footer__heading ${pageColor}`}>Follow Me</h2>
       <ul className="footer__list">
         <li className="footer__listItem">
           <a
@@ -53,7 +63,15 @@ const SocialWrapper = styled.footer`
 
   .footer__heading {
     margin-bottom: 0;
-    border-bottom: 3px solid var(--primary-3);
+    &.primary {
+      border-bottom: 3px solid var(--primary-3);
+    }
+    &.secondary {
+      border-bottom: 3px solid var(--secondary-3);
+    }
+    &.tertiary {
+      border-bottom: 3px solid var(--tertiary-3);
+    }
   }
 
   .footer__list {
@@ -65,7 +83,18 @@ const SocialWrapper = styled.footer`
     margin: 0.75rem;
 
     a {
+      color: var(--gray-1);
       padding: 5px;
+      border-radius: 5px;
+      &.twitter {
+        background-color: #1da1f2;
+      }
+      &.github {
+        background: #7a7a79;
+      }
+      &.linkedin {
+        background: #2867b2;
+      }
     }
   }
 `

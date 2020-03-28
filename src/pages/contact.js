@@ -4,15 +4,19 @@ import styled from 'styled-components'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import ContactBoxes from '../components/contactBoxes'
+import Navbar from '../components/navbar'
+import Socials from '../components/socials'
 
-const ContactPage = () => (
+const ContactPage = ({ location }) => (
   <>
     <Layout>
       <SEO title="Contact" />
+      <Navbar pathName={location.pathname} />
       <ContactWrapper>
         <h1>Get in Touch</h1>
         <ContactBoxes />
       </ContactWrapper>
+      <Socials pathName={location.pathname} />
     </Layout>
   </>
 )

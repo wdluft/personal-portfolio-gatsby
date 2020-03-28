@@ -1,29 +1,33 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Navbar from '../components/navbar'
-import Socials from '../components/socials'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
+import Navbar from '../components/navbar'
+import Socials from '../components/socials'
 
-const IndexPage = () => (
-  <>
-    <Layout>
-      <SEO title="Home" />
-      <SectionWrapper className="section">
-        <div className="section__card">
-          <h1 className="section__h1">
-            I am <span className="section__span">Will Luft</span>
-          </h1>
-          <p className="section_p">
-            I build websites, do customer support, and play sports and Magic the
-            Gathering
-          </p>
-        </div>
-      </SectionWrapper>
-    </Layout>
-  </>
-)
+const IndexPage = ({ location }) => {
+  return (
+    <>
+      <Layout>
+        <SEO title="Home" />
+        <Navbar pathName={location.pathname} />
+        <SectionWrapper className="section">
+          <div className="section__card">
+            <h1 className="section__h1">
+              I am <span className="section__span">Will Luft</span>
+            </h1>
+            <p className="section_p">
+              I build websites, do customer support, and play sports and Magic
+              the Gathering
+            </p>
+          </div>
+        </SectionWrapper>
+        <Socials pathName={location.pathname} />
+      </Layout>
+    </>
+  )
+}
 
 export default IndexPage
 

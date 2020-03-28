@@ -5,23 +5,32 @@ import logoBlue from '../images/logo-blue.svg'
 import logoGreen from '../images/logo-green.svg'
 import logoPink from '../images/logo-pink.svg'
 
-const Navbar = () => {
+const Navbar = ({ pathName }) => {
+  let currentLogo = logoBlue
+  if (pathName === '/contact') {
+    currentLogo = logoGreen
+  } else if (pathName === '/about') {
+    currentLogo = logoPink
+  } else {
+    currentLogo = logoBlue
+  }
+
   return (
     <NavWrapper>
       <div>
-        <Link to="/">
-          <img src={logoBlue} alt="Logo" className="nav__img-logo" />
+        <Link to={'/'}>
+          <img src={currentLogo} alt="Logo" className="nav__img-logo" />
         </Link>
       </div>
       <div className="nav__links">
         <ul className="nav__links__ul">
           <li className="nav__links__ul__li">
-            <Link to="/about" activeClassName="active" className="about">
+            <Link to={'/about'} activeClassName="active" className="about">
               About
             </Link>
           </li>
           <li className="nav__links__ul__li">
-            <Link to="/contact" activeClassName="active" className="contact">
+            <Link to={'/contact'} activeClassName="active" className="contact">
               Contact
             </Link>
           </li>
@@ -64,16 +73,24 @@ const NavWrapper = styled.nav`
         color: var(--gray-1);
         text-decoration: none;
         &.about {
-          border-bottom: 2px solid var(--secondary-3);
+          border-bottom: 3px solid var(--secondary-3);
         }
         &.contact {
-          border-bottom: 2px solid var(--tertiary-3);
+          border-bottom: 3px solid var(--tertiary-3);
         }
       }
     }
   }
 
   .active {
-    border-bottom: 2px solid var(--primary-3);
+    border-bottom: 3px solid var(--primary-3);
+
+    &.about {
+      border-bottom: 3px solid var(--secondary-3);
+    }
+
+    &.contact {
+      border-bottom: 3px solid var(--tertiary-3);
+    }
   }
 `
