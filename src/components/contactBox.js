@@ -19,13 +19,13 @@ const StyledContactBox = styled.div`
   padding: 1rem 1.75rem;
   margin-bottom: 3rem;
   transition: padding 0.5s;
-  background: var(--tertiary-3);
+  background: var(--secondary-3);
   box-shadow: var(--elevation-4);
   border-radius: 5px;
   cursor: pointer;
 
   a {
-    color: var(--gray-6);
+    color: #111111;
   }
 
   &:hover {

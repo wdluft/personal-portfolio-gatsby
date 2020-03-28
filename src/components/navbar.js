@@ -8,9 +8,9 @@ import logoPink from '../images/logo-pink.svg'
 const Navbar = ({ pathName }) => {
   let currentLogo = logoBlue
   if (pathName === '/contact') {
-    currentLogo = logoGreen
-  } else if (pathName === '/about') {
     currentLogo = logoPink
+  } else if (pathName === '/about') {
+    currentLogo = logoGreen
   } else {
     currentLogo = logoBlue
   }
@@ -95,10 +95,10 @@ const NavWrapper = styled.nav`
         color: var(--gray-1);
         text-decoration: none;
         &.about {
-          border-bottom: 3px solid var(--secondary-3);
+          border-bottom: 3px solid var(--tertiary-3);
         }
         &.contact {
-          border-bottom: 3px solid var(--tertiary-3);
+          border-bottom: 3px solid var(--secondary-3);
         }
       }
     }
@@ -108,11 +108,11 @@ const NavWrapper = styled.nav`
     border-bottom: 3px solid var(--primary-3);
 
     &.about {
-      border-bottom: 3px solid var(--secondary-3);
+      border-bottom: 3px solid var(--tertiary-3);
     }
 
     &.contact {
-      border-bottom: 3px solid var(--tertiary-3);
+      border-bottom: 3px solid var(--secondary-3);
     }
   }
 

@@ -31,7 +31,7 @@ const ResumeItemWrapper = styled.div`
   }
 
   h3 {
-    color: var(--secondary-3);
+    color: var(--tertiary-3);
     letter-spacing: 0.2rem;
   }
 

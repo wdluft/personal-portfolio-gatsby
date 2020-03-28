@@ -4,9 +4,9 @@ import styled from 'styled-components'
 const Socials = ({ pathName }) => {
   let pageColor = 'primary'
   if (pathName === '/about') {
-    pageColor = 'secondary'
-  } else if (pathName === '/contact') {
     pageColor = 'tertiary'
+  } else if (pathName === '/contact') {
+    pageColor = 'secondary'
   } else {
     pageColor = 'primary'
   }
