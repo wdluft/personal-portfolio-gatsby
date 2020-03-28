@@ -31,14 +31,15 @@ const ResumeItemWrapper = styled.div`
   }
 
   h3 {
-    color: var(--primary-3);
+    /* color: var(--secondary-3); */
+    letter-spacing: 0.2rem;
   }
 
   h5 {
-    color: var(--primary-1);
+    /* color: var(--secondary-3); */
   }
 
   h6 {
-    color: var(--primary-1);
+    /* color: var(--secondary-3); */
   }
 `

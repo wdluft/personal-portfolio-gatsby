@@ -157,12 +157,15 @@ nav {
 
 h1 {
   font-size: var(--heading-1);
+  letter-spacing: 0.2rem;
 }
 h2 {
   font-size: var(--heading-2);
+  letter-spacing: 0.2rem;
 }
 h3 {
   font-size: var(--heading-3);
+  letter-spacing: 0.2rem;
 }
 h4 {
   font-size: var(--heading-4);

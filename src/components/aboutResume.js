@@ -33,6 +33,6 @@ const ResumeWrapper = styled.div`
     #4f4f4f
   );
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.25), var(--elevation-3);
-  border-top: var(--primary-3) solid 10px;
+  border-top: var(--secondary-3) solid 10px;
   margin-bottom: 3rem;
 `
