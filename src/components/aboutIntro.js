@@ -33,8 +33,8 @@ const AboutIntroWrapper = styled.div`
 
   padding-top: 15px;
   border-radius: 5px;
-  background: var(--gray-5);
-  background-image: linear-gradient(
+  background: var(--gray-7);
+  /* background-image: linear-gradient(
     to bottom,
     #626262,
     #5d5d5d,
@@ -42,6 +42,15 @@ const AboutIntroWrapper = styled.div`
     #545454,
     #4f4f4f
   );
+  background-image: linear-gradient(
+    to bottom,
+    #4f4f4f,
+    #434343,
+    #383838,
+    #2d2d2d,
+    #222222
+  );
+   */
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.25), var(--elevation-3);
   border-top: var(--secondary-3) solid 10px;
   padding-bottom: 1.5rem;

@@ -25,6 +25,7 @@ font-family: 'Work Sans', sans-serif; */
   --gray-4: #626262;
   --gray-5: #4f4f4f;
   --gray-6: #222222;
+  --gray-7: #333333;
 
   /* Background */
   --bg-color: var(--gray-6);
@@ -50,8 +51,8 @@ font-family: 'Work Sans', sans-serif; */
   --heading-6: --var(--smallFontSize);
 
   /* Links */
-  --linkColor: var(--tertiary-3);
-  --linkHoverColor: var(--tertiary-1);
+  --linkColor: var(--primary-3);
+  --linkHoverColor: var(--primary-2);
 
   /* Elevation */
   --elevation-0: inset 0 7px 9 -7px rgba(0, 0, 0, 0.7);

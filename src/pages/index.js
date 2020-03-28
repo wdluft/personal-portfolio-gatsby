@@ -34,7 +34,7 @@ const SectionWrapper = styled.section`
   align-items: center;
 
   .section__card {
-    background: var(--gray-5);
+    background: var(--gray-7);
     max-width: 748px;
     margin: 10vh auto 0;
     border-radius: 5px;
