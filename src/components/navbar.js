@@ -67,7 +67,7 @@ const NavWrapper = styled.nav`
       transform: translate3d(-120%, 0, 0);
       margin-left: 10px;
       z-index: -1;
-      transition: all 0.75s cubic-bezier(0, 0.92, 1, 0.99);
+      transition: all 0.25s cubic-bezier(0, 0.92, 1, 0.99);
       font-size: 1.75rem;
       color: var(--gray-1);
       font-weight: normal;
