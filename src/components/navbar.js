@@ -121,4 +121,21 @@ const NavWrapper = styled.nav`
       transform: translate3d(0, 0, 0);
     }
   }
+
+  /* small screens/mobile phones */
+  @media (max-width: 640px) {
+    .my-name {
+      display: none;
+    }
+  }
+
+  /* medium screens/tablets */
+  @media (max-width: 768px) {
+    /* nothing right now */
+  }
+
+  /* large screens/laptops */
+  @media (max-width: 1024px) {
+    /* nothing right now */
+  }
 `
