@@ -57,4 +57,14 @@ const SectionWrapper = styled.section`
   .section_p {
     font-size: var(--mediumFontSize);
   }
+
+  @media (max-width: 640px) {
+    .section__card {
+      margin: 10vh 10px 0;
+    }
+
+    .section__h1 {
+      font-size: var(--heading-1);
+    }
+  }
 `
