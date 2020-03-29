@@ -7,7 +7,7 @@ import AboutIntro from '../components/aboutIntro'
 import AboutResume from '../components/aboutResume'
 import Navbar from '../components/navbar'
 import Socials from '../components/socials'
-import ProjectsTab from '../components/project-tabs/projectsTab'
+import ProjectsTab from '../components/projectsTab'
 
 const AboutPage = ({ location }) => (
   <>
