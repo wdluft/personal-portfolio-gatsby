@@ -7,6 +7,7 @@ import AboutIntro from '../components/aboutIntro'
 import AboutResume from '../components/aboutResume'
 import Navbar from '../components/navbar'
 import Socials from '../components/socials'
+import ProjectsTab from '../components/project-tabs/projectsTab'
 
 const AboutPage = ({ location }) => (
   <>
@@ -18,6 +19,7 @@ const AboutPage = ({ location }) => (
         <AboutIntro />
         <h1>Resume</h1>
         <AboutResume />
+        <ProjectsTab />
       </AboutWrapper>
       <Socials pathName={location.pathname} />
     </Layout>
