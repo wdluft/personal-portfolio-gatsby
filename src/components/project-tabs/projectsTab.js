@@ -24,8 +24,18 @@ const ProjectsTab = () => {
                 Obcaecati nulla esse suscipit, at maxime quaerat sint
                 dignissimos aspernatur error iste?
               </p>
-              <a href="https://manamaker.site">Website</a>
-              <a href="https://github.com/wdluft/manamaker-version-2">
+              <a
+                href="https://manamaker.site"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Website
+              </a>
+              <a
+                href="https://github.com/wdluft/manamaker-version-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Github Repo
               </a>
             </div>
@@ -41,10 +51,20 @@ const ProjectsTab = () => {
                 Obcaecati nulla esse suscipit, at maxime quaerat sint
                 dignissimos aspernatur error iste?
               </p>
-              <a href="https://mystifying-heisenberg-8bc659.netlify.com/">
+              <a
+                href="https://mystifying-heisenberg-8bc659.netlify.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Website
               </a>
-              <a href="https://github.com/wdluft/tomato-timer">Github Repo</a>
+              <a
+                href="https://github.com/wdluft/tomato-timer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github Repo
+              </a>
             </div>
             <img src={headshot} alt="Project" />
           </TabPannelWrapper>
@@ -58,8 +78,18 @@ const ProjectsTab = () => {
                 Obcaecati nulla esse suscipit, at maxime quaerat sint
                 dignissimos aspernatur error iste?
               </p>
-              <a href="https://randomcommander.com/">Website</a>
-              <a href="https://github.com/wdluft/randomcommander">
+              <a
+                href="https://randomcommander.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Website
+              </a>
+              <a
+                href="https://github.com/wdluft/randomcommander"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Github Repo
               </a>
             </div>
@@ -75,8 +105,18 @@ const ProjectsTab = () => {
                 Obcaecati nulla esse suscipit, at maxime quaerat sint
                 dignissimos aspernatur error iste?
               </p>
-              <a href="https://becomebydoing.me">Website</a>
-              <a href="https://github.com/wdluft/become-by-doing-blog">
+              <a
+                href="https://becomebydoing.me"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Website
+              </a>
+              <a
+                href="https://github.com/wdluft/become-by-doing-blog"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Github Repo
               </a>
             </div>
