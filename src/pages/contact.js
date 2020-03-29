@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import ContactBoxes from '../components/contactBoxes'
+import ContactBoxes from '../components/contact-page/contactBoxes'
 import Navbar from '../components/navbar'
 import Socials from '../components/socials'
 

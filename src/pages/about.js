@@ -3,11 +3,11 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import AboutIntro from '../components/aboutIntro'
-import AboutResume from '../components/aboutResume'
+import AboutIntro from '../components/about-page/aboutIntro'
+import AboutResume from '../components/about-page/aboutResume'
 import Navbar from '../components/navbar'
 import Socials from '../components/socials'
-import ProjectsTab from '../components/projectsTab'
+import ProjectsTab from '../components/about-page/projectsTab'
 
 const AboutPage = ({ location }) => (
   <>
