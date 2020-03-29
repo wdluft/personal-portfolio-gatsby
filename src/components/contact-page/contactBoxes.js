@@ -27,7 +27,17 @@ const StyledContactBoxes = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media (max-width: 420px) {
-    margin-bottom: 3rem;
+  /* small/mobile */
+  @media (max-width: 640px) {
+    margin-bottom: 2.5rem;
+  }
+  /* medium/tablet */
+  @media (max-width: 768px) {
+    /* nothing right now */
+    margin-bottom: 4rem;
+  }
+  /* large/tablet */
+  @media (max-width: 1024px) {
+    /* nothing right now */
   }
 `
