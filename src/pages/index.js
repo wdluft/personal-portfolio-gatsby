@@ -40,7 +40,7 @@ const SectionWrapper = styled.section`
   .section__card {
     background: var(--gray-7);
     max-width: 748px;
-    margin: 10vh auto 0;
+    margin: 10vh 32px 0;
     border-radius: 5px;
     padding: 10px;
     box-shadow: var(--massiveShadow);
@@ -58,6 +58,7 @@ const SectionWrapper = styled.section`
     font-size: var(--mediumFontSize);
   }
 
+  /* small/mobile */
   @media (max-width: 640px) {
     .section__card {
       margin: 10vh 10px 0;
@@ -66,5 +67,15 @@ const SectionWrapper = styled.section`
     .section__h1 {
       font-size: var(--heading-1);
     }
+  }
+
+  /* medium/tablet */
+  @media (max-width: 768px) {
+    /* none right now */
+  }
+
+  /* large/laptop */
+  @media (max-width: 1024px) {
+    /* none right now */
   }
 `
