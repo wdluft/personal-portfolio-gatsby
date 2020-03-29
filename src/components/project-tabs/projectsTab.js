@@ -9,52 +9,76 @@ const ProjectsTab = () => {
     <ProjectsTabWrapper>
       <Tabs>
         <TabList>
-          <Tab>Project 1</Tab>
-          <Tab>Project 2</Tab>
-          <Tab>Project 3</Tab>
+          <Tab>ManaMaker</Tab>
+          <Tab>Tomato Timer</Tab>
+          <Tab>Random Commander</Tab>
+          <Tab>Become by Doing Blog</Tab>
         </TabList>
 
         <TabPanel>
           <TabPannelWrapper>
-            <div>
-              <h3>Any content 1</h3>
+            <div className="tabPannel__project-info">
+              <h3>ManaMaker</h3>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Obcaecati nulla esse suscipit, at maxime quaerat sint
                 dignissimos aspernatur error iste?
               </p>
-              <a href="#">Link to Website</a>
-              <a href="#">Link to Github Repo</a>
+              <a href="https://manamaker.site">Website</a>
+              <a href="https://github.com/wdluft/manamaker-version-2">
+                Github Repo
+              </a>
             </div>
             <img src={headshot} alt="Project" />
           </TabPannelWrapper>
         </TabPanel>
         <TabPanel>
           <TabPannelWrapper>
-            <div>
-              <h3>Any content 2</h3>
+            <div className="tabPannel__project-info">
+              <h3>Tomato Timer</h3>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Obcaecati nulla esse suscipit, at maxime quaerat sint
                 dignissimos aspernatur error iste?
               </p>
-              <a href="#">Link to Website</a>
-              <a href="#">Link to Github Repo</a>
+              <a href="https://mystifying-heisenberg-8bc659.netlify.com/">
+                Website
+              </a>
+              <a href="https://github.com/wdluft/tomato-timer">Github Repo</a>
             </div>
             <img src={headshot} alt="Project" />
           </TabPannelWrapper>
         </TabPanel>
         <TabPanel>
           <TabPannelWrapper>
-            <div>
-              <h3>Any content 3</h3>
+            <div className="tabPannel__project-info">
+              <h3>Random Commander</h3>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Obcaecati nulla esse suscipit, at maxime quaerat sint
                 dignissimos aspernatur error iste?
               </p>
-              <a href="#">Link to Website</a>
-              <a href="#">Link to Github Repo</a>
+              <a href="https://randomcommander.com/">Website</a>
+              <a href="https://github.com/wdluft/randomcommander">
+                Github Repo
+              </a>
+            </div>
+            <img src={headshot} alt="Project" />
+          </TabPannelWrapper>
+        </TabPanel>
+        <TabPanel>
+          <TabPannelWrapper>
+            <div className="tabPannel__project-info">
+              <h3>Become by Doing Blog</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Obcaecati nulla esse suscipit, at maxime quaerat sint
+                dignissimos aspernatur error iste?
+              </p>
+              <a href="https://becomebydoing.me">Website</a>
+              <a href="https://github.com/wdluft/become-by-doing-blog">
+                Github Repo
+              </a>
             </div>
             <img src={headshot} alt="Project" />
           </TabPannelWrapper>
@@ -76,7 +100,7 @@ const ProjectsTabWrapper = styled.section`
   .react-tabs__tab {
     background: var(--gray-7);
     color: var(--gray-1);
-    border: 3px solid transparent;
+    border: 1px solid transparent;
     border-radius: 5px 5px 0 0;
     margin-right: 3px;
     bottom: 0;
@@ -88,10 +112,7 @@ const ProjectsTabWrapper = styled.section`
   }
 
   .react-tabs__tab--selected {
-    border-left: 3px solid var(--tertiary-3);
-    border-top: 3px solid var(--tertiary-3);
-    border-right: 3px solid var(--tertiary-3);
-    border-bottom: 3px solid var(--tertiary-3);
+    border: 1px solid var(--tertiary-3);
   }
 `
 
@@ -110,5 +131,20 @@ const TabPannelWrapper = styled.div`
   img {
     width: 300px;
     height: 300px;
+  }
+
+  .tabPannel__project-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    font-size: var(--mediumFontSize);
+
+    h3 {
+      color: var(--tertiary-3);
+    }
+
+    p {
+      line-height: 1.75rem;
+    }
   }
 `

@@ -37,4 +37,12 @@ const AboutWrapper = styled.div`
   h1 {
     text-shadow: var(--elevation-1);
   }
+
+  a {
+    color: var(--tertiary-3);
+
+    &:hover {
+      color: var(--tertiary-2);
+    }
+  }
 `
