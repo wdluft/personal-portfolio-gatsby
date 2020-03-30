@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 const ResumeItem = ({ position }) => {
   return (
     <ResumeItemWrapper>
-      <h3>{position.company}</h3>
+      {position.company ? <h3>{position.company}</h3> : ''}
       <h5>{position.position}</h5>
       <h5>
         {position.start} - {position.end}

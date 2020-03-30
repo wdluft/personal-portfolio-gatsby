@@ -9,7 +9,6 @@ export const resumeInfo = [
   },
   {
     id: 2,
-    company: 'DonorsChoose',
     position: 'Senior Customer Support Representative',
     start: 'June, 2017',
     end: 'May, 2019',
@@ -20,7 +19,6 @@ export const resumeInfo = [
   },
   {
     id: 3,
-    company: 'DonorsChoose',
     position: 'Fulfillment Support Agent',
     start: 'July, 2015',
     end: 'May, 2017',
