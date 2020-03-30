@@ -5,16 +5,16 @@ export const resumeInfo = [
     position: 'Customer Support Specialist',
     start: 'June, 2019',
     end: 'Current',
-    description: `Answering questions about a variety of different topics across the entire teacher and donor lifecycles. Answering 50-150 emails a day, providing support from helping teachers create projects, donors make donations, and everything in between.`
+    description: `Answer questions about a variety of topics across the entire teacher and donor lifecycles. Answer 50-150 emails a day, providing support from helping teachers create projects, donors making donations, and everything in between.`
   },
   {
     id: 2,
     position: 'Senior Customer Support Representative',
     start: 'June, 2017',
     end: 'May, 2019',
-    description: `Helping teachers create projects to get the materials and experiences
+    description: `Help teachers create projects to get materials and experiences
     their classrooms need. Specializing in fulfillment, funding
-    opportunities, and draft support. Creates and leads trainings for the
+    opportunities, and project draft support. Help create and lead trainings for the
     support team.`
   },
   {
@@ -22,7 +22,7 @@ export const resumeInfo = [
     position: 'Fulfillment Support Agent',
     start: 'July, 2015',
     end: 'May, 2017',
-    description: `Communicating with both teachers and vendors to make sure the materials arrive safely and intact. Facillitated returns and replacement orders, and helped track down lost shipments.`
+    description: `Communicate with teachers and vendors to make sure materials arrive safely and on time. Facillitate returns and replacement orders, and help track down lost shipments.`
   },
   {
     id: 4,
