@@ -25,7 +25,7 @@ export default ContactPage
 
 const ContactWrapper = styled.section`
   max-width: 1024px;
-  margin-top: 15vh;
+  margin-top: 150px;
   margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
