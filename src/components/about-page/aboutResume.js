@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-import ResumeItem from './ResumeItem'
+import ResumeItem from './resumeItem'
 import { resumeInfo } from '../utils/resumeInfo'
 
 const AboutResume = () => {

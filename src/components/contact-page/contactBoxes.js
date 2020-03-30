@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import ContactBox from './ContactBox'
+import ContactBox from './contactBox'
 
 const ContactBoxes = () => {
   return (
