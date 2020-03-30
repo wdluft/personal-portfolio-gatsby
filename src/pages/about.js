@@ -15,10 +15,11 @@ const AboutPage = ({ location }) => (
       <SEO title="About" />
       <Navbar pathName={location.pathname} />
       <AboutWrapper className="aboutDiv">
-        <h1>Who am I?</h1>
+        <h2>Who am I?</h2>
         <AboutIntro />
-        <h1>Resume</h1>
+        <h2>Resume</h2>
         <AboutResume />
+        <h2>Projects</h2>
         <ProjectsTab />
       </AboutWrapper>
       <Socials pathName={location.pathname} />
@@ -30,12 +31,13 @@ export default AboutPage
 
 const AboutWrapper = styled.div`
   max-width: 960px;
-  margin: 150px auto 25px;
+  margin: 100px auto 25px;
   display: flex;
   flex-direction: column;
 
-  h1 {
+  h2 {
     text-shadow: var(--elevation-1);
+    margin: 0 1rem 0.5rem;
   }
 
   a {
@@ -43,6 +45,22 @@ const AboutWrapper = styled.div`
 
     &:hover {
       color: var(--tertiary-2);
+    }
+  }
+
+  /* small/mobile */
+  @media (max-width: 640px) {
+    /* nothing right now */
+  }
+  /* medium/tablet */
+  @media (max-width: 768px) {
+    align-items: center;
+  }
+  /* large/tablet */
+  @media (max-width: 1024px) {
+    /* nothing right now */
+    h2 {
+      margin: 0 2rem 0.5rem;
     }
   }
 `

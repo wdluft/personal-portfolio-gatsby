@@ -27,4 +27,18 @@ const ResumeWrapper = styled.div`
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.25), var(--elevation-3);
   border-top: var(--tertiary-3) solid 10px;
   margin-bottom: 3rem;
+
+  /* small/mobile */
+  @media (max-width: 640px) {
+    /* nothing right now */
+  }
+  /* medium/tablet */
+  @media (max-width: 768px) {
+    /* nothing right now */
+  }
+  /* large/tablet */
+  @media (max-width: 1024px) {
+    /* nothing right now */
+    margin: 0 1rem 2rem;
+  }
 `

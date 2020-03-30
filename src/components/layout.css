@@ -32,8 +32,9 @@ font-family: 'Work Sans', sans-serif; */
   --bg-fill: var(--primary-3);
 
   /* Fonts */
-  --body-font: 'Playfair Display', serif;
+  /* --body-font: 'Playfair Display', serif; */
   --heading-font: 'Work Sans', sans-serif;
+  --body-font: 'Work Sans', sans-serif;
 
   /* Font sizes */
   --baseFontSize: 1rem;

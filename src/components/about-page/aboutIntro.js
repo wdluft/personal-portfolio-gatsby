@@ -57,9 +57,8 @@ const AboutIntroWrapper = styled.div`
   }
 
   p {
-    font-size: var(--mediumFontSize);
-    line-height: 1.75rem;
     padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   a {
@@ -68,5 +67,22 @@ const AboutIntroWrapper = styled.div`
     &:hover {
       color: var(--tertiary-2);
     }
+  }
+
+  /* small/mobile */
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+
+    img {
+      display: none;
+    }
+  }
+  /* medium/tablet */
+  @media (max-width: 768px) {
+    /* nothing right now */
+  }
+  /* large/tablet */
+  @media (max-width: 1024px) {
+    margin: 0 1rem 2rem;
   }
 `
