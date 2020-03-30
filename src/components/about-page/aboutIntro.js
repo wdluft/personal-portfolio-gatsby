@@ -15,6 +15,10 @@ const AboutIntro = () => {
         </p>
         <br />
         <p>
+          I am an aspiring web developer, focusing on HTML, CSS, JavaScript, and
+          React. Below are some of the projects I've built.
+        </p>
+        <p>
           To get my thoughts out of my head, I write for my blog,{' '}
           <a href="https://www.becomebydoing.me">Become by Doing</a>. I'll write
           about anytihng ranging from web development, to what's going on in the
@@ -22,8 +26,8 @@ const AboutIntro = () => {
         </p>
         <br />
         <p>
-          Please <Link to="/contact">reach out to me</Link> if you'd like to do
-          something together or chat.
+          Please <Link to="/contact">reach out to me</Link> if you'd like to
+          chat or build something together.
         </p>
       </div>
     </AboutIntroWrapper>
