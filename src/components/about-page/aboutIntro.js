@@ -18,6 +18,7 @@ const AboutIntro = () => {
           I am an aspiring web developer, focusing on HTML, CSS, JavaScript, and
           React. Below are some of the projects I've built.
         </p>
+        <br />
         <p>
           To get my thoughts out of my head, I write for my blog,{' '}
           <a href="https://www.becomebydoing.me">Become by Doing</a>. I'll write
