@@ -18,8 +18,8 @@ const IndexPage = ({ location }) => {
               I am <span className="section__span">Will Luft</span>
             </h1>
             <p className="section_p">
-              I build websites, do customer support, and play sports and Magic
-              the Gathering
+              I build websites, write, support teachers and donors at
+              DonorsChoose, and play sports and Magic the Gathering
             </p>
           </div>
         </SectionWrapper>
