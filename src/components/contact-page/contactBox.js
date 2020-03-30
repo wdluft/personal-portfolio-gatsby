@@ -15,6 +15,8 @@ export default ContactBox
 
 const StyledContactBox = styled.div`
   font-size: var(--mediumFontSize);
+  font-weight: bold;
+  letter-spacing: 0.15rem;
   border: 3px var(--gray-1) solid;
   padding: 1rem 1.75rem;
   margin-bottom: 2rem;
