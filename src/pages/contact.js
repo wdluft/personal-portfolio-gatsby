@@ -39,7 +39,11 @@ const ContactWrapper = styled.section`
 
   /* small/mobile */
   @media (max-width: 640px) {
-    /* nothing right now */
+    h1 {
+      font-size: var(--heading-2);
+    }
+
+    margin-bottom: 1.75rem;
   }
   /* medium/tablet */
   @media (max-width: 768px) {

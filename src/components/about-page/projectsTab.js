@@ -208,6 +208,7 @@ const TabPannelWrapper = styled.div`
     padding-bottom: 1rem;
 
     img {
+      margin-top: 1rem;
       max-width: 300px;
       max-height: 300px;
     }

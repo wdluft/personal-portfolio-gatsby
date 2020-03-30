@@ -35,18 +35,18 @@ const StyledContactBox = styled.div`
     text-decoration: underline;
   }
 
-  /* small/mobile */
-  @media (max-width: 640px) {
-    font-size: var(--largeFontSize);
-    padding: 1rem 1.25rem;
+  /* large/tablet */
+  @media (max-width: 1024px) {
+    /* nothing right now */
   }
   /* medium/tablet */
   @media (max-width: 768px) {
     /* nothing right now */
     font-size: var(--largeFontSize);
   }
-  /* large/tablet */
-  @media (max-width: 1024px) {
-    /* nothing right now */
+  /* small/mobile */
+  @media (max-width: 640px) {
+    font-size: var(--baseFontSize);
+    padding: 1rem 1rem;
   }
 `
