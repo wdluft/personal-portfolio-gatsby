@@ -6,8 +6,23 @@ import randomCommanderImg from '../../images/randomcommander 1.jpg'
 import ManamakerImg from '../../images/manamaker 1.jpg'
 import tomatoTimerImg from '../../images/tomato-timer 1.jpg'
 import styled from 'styled-components'
+import Img from 'gatsby-image'
+import { graphql, useStaticQuery } from 'gatsby'
 
 const ProjectsTab = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "become-by-doing 1.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 450) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  console.log(data.file)
+
   return (
     <ProjectsTabWrapper>
       <Tabs>
@@ -118,7 +133,8 @@ const ProjectsTab = () => {
                 Github
               </a>
             </div>
-            <img src={blogImg} alt="Become by Doing blog" />
+            {/* <img src={blogImg} alt="Become by Doing blog" /> */}
+            <Img fluid={data.file.childImageSharp.fluid} />
           </TabPannelWrapper>
         </TabPanel>
       </Tabs>
