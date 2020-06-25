@@ -41,10 +41,10 @@ const AboutWrapper = styled.div`
   }
 
   a {
-    color: var(--tertiary-3);
+    color: var(--tertiary);
 
     &:hover {
-      color: var(--tertiary-2);
+      color: var(--tertiaryLight);
     }
   }
 

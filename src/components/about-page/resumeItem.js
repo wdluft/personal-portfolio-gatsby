@@ -29,13 +29,13 @@ const ResumeItemWrapper = styled.div`
   padding-bottom: 1.5rem;
 
   p {
-    font-family: var(--heading-font);
-    border-bottom: 3px solid var(--tertiary-3);
+    font-family: var(--headingFont);
+    border-bottom: 3px solid var(--tertiary);
     padding-bottom: 0.5rem;
   }
 
   h3 {
-    color: var(--tertiary-3);
+    color: var(--tertiary);
     letter-spacing: 0.2rem;
   }
 

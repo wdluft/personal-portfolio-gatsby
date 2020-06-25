@@ -3,38 +3,31 @@
 font-family: 'Work Sans', sans-serif; */
 
 :root {
-  --primary-1: #c8ffff;
-  --primary-2: #80ffff;
-  --primary-3: #00ffff;
-  --primary-4: #009999;
-  --primary-5: #004242;
-  --secondary-1: #ffe5f5;
-  --secondary-2: #ff80ce;
-  --secondary-3: #ff009d;
-  --secondary-4: #99005e;
-  --secondary-5: #4d002f;
-  --tertiary-1: #9effa9;
-  --tertiary-2: #75ff83;
-  --tertiary-3: #00ff19;
-  --tertiary-4: #00b212;
-  --tertiary-5: #004707;
-  --gray-0: #ffffff;
-  --gray-1: #f7f7f7;
-  --gray-2: #cfcfcf;
-  --gray-3: #9e9e9e;
-  --gray-4: #626262;
-  --gray-5: #4f4f4f;
-  --gray-6: #222222;
-  --gray-7: #333333;
+  --primary: #38bec9;
+  --primaryLight: #87eaf2;
+  --primaryDark: #0e7c86;
+  --secondary: #94c843;
+  --secondaryDark: #507712;
+  --secondaryLight: #c7ea8f;
+  --tertiary: #496ed2;
+  --tertiaryDark: #2d53b8;
+  --tertiaryLight: #708ddc;
+  --black: #27241d;
+  --superDarkGray: #423d33;
+  --white: #faf9f7;
+  --darkGray: #504a40;
+  --lightGray: #e8e6e1;
+  --gray: #a39e93;
 
   /* Background */
-  --bg-color: var(--gray-6);
-  --bg-fill: var(--primary-3);
+  --bgColor: var(--superDarkGray);
+  --bgFill: var(--primary);
 
   /* Fonts */
   /* --body-font: 'Playfair Display', serif; */
-  --heading-font: 'Work Sans', sans-serif;
-  --body-font: 'Work Sans', sans-serif;
+  --headingFont: 'Work Sans', sans-serif;
+  --bodyFont: 'Work Sans', sans-serif;
+  --textColor: var(--white);
 
   /* Font sizes */
   --baseFontSize: 1rem;
@@ -52,8 +45,9 @@ font-family: 'Work Sans', sans-serif; */
   --heading-6: var(--smallFontSize);
 
   /* Links */
-  --linkColor: var(--primary-3);
-  --linkHoverColor: var(--primary-2);
+  --linkColor: var(--primary);
+  --linkHoverColor: var(--primaryLight);
+  --linkActiveColor: var(--primaryDark);
 
   /* Elevation */
   --elevation-0: inset 0 7px 9 -7px rgba(0, 0, 0, 0.7);
@@ -71,8 +65,8 @@ font-family: 'Work Sans', sans-serif; */
 
   /* Card - border-radius, bg, color, button radius */
   --cardBorderRadius: 5px;
-  --cardBgColor: var(--gray-5);
-  --cardColor: var(--gray-0);
+  --cardBgColor: var(--darkGray);
+  --cardColor: var(--white);
 }
 
 * {
@@ -98,7 +92,7 @@ button {
 
 input,
 textarea {
-  border: 1px solid var(--gray-3);
+  border: 1px solid var(--gray);
 }
 
 button {
@@ -126,11 +120,11 @@ html {
 }
 
 body {
-  font-family: var(--body-font);
-  color: var(--gray-0);
+  font-family: var(--bodyFont);
+  color: var(--textColor);
   line-height: 1.5;
   min-height: 100vh;
-  background-color: var(--bg-color);
+  background-color: var(--bgColor);
   /* Rain pattern from Heropatterns.com */
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%2300ffff' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
@@ -141,7 +135,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--heading-font);
+  font-family: var(--headingFont);
   line-height: 1.15;
   font-weight: bold;
 }
@@ -154,7 +148,7 @@ h5,
 h6,
 button,
 nav {
-  font-family: var(--heading-font);
+  font-family: var(--headingFont);
 }
 
 h1 {
@@ -180,7 +174,7 @@ h6 {
 }
 
 p {
-  font-family: var(--body-font);
+  font-family: var(--bodyFont);
   line-height: 1.75rem;
 }
 
@@ -192,6 +186,10 @@ a {
 a:hover {
   color: var(--linkHoverColor);
   text-decoration: underline;
+}
+
+a:active {
+  color: var(--linkActiveColor);
 }
 
 button {

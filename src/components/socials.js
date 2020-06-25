@@ -63,13 +63,13 @@ const SocialWrapper = styled.footer`
   .footer__heading {
     margin-bottom: 0;
     &.primary {
-      border-bottom: 3px solid var(--primary-3);
+      border-bottom: 3px solid var(--primary);
     }
     &.secondary {
-      border-bottom: 3px solid var(--secondary-3);
+      border-bottom: 3px solid var(--secondary);
     }
     &.tertiary {
-      border-bottom: 3px solid var(--tertiary-3);
+      border-bottom: 3px solid var(--tertiary);
     }
   }
 

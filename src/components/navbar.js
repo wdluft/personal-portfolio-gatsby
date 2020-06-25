@@ -1,18 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import logoBlue from '../images/logo-blue.svg'
-import logoGreen from '../images/logo-green.svg'
-import logoPink from '../images/logo-pink.svg'
+import logoPrimary from '../images/logo-primary.svg'
+import logoTertiary from '../images/logo-tertiary.svg'
+import logoSecondary from '../images/logo-secondary.svg'
 
 const Navbar = ({ pathName }) => {
-  let currentLogo = logoBlue
+  let currentLogo = logoPrimary
   if (pathName === '/contact') {
-    currentLogo = logoPink
+    currentLogo = logoTertiary
   } else if (pathName === '/about') {
-    currentLogo = logoGreen
+    currentLogo = logoSecondary
   } else {
-    currentLogo = logoBlue
+    currentLogo = logoPrimary
   }
 
   return (
@@ -69,7 +69,7 @@ const NavWrapper = styled.nav`
       z-index: -1;
       transition: all 0.25s cubic-bezier(0, 0.92, 1, 0.99);
       font-size: 1.75rem;
-      color: var(--gray-1);
+      color: var(--white);
       font-weight: normal;
     }
 
@@ -89,30 +89,30 @@ const NavWrapper = styled.nav`
 
     a {
       font-size: var(--largeFontSize);
-      color: var(--gray-1);
+      color: var(--white);
 
       &:hover {
-        color: var(--gray-1);
+        color: var(--white);
         text-decoration: none;
         &.about {
-          border-bottom: 3px solid var(--tertiary-3);
+          border-bottom: 3px solid var(--tertiary);
         }
         &.contact {
-          border-bottom: 3px solid var(--secondary-3);
+          border-bottom: 3px solid var(--secondary);
         }
       }
     }
   }
 
   .active {
-    border-bottom: 3px solid var(--primary-3);
+    border-bottom: 3px solid var(--primary);
 
     &.about {
-      border-bottom: 3px solid var(--tertiary-3);
+      border-bottom: 3px solid var(--tertiary);
     }
 
     &.contact {
-      border-bottom: 3px solid var(--secondary-3);
+      border-bottom: 3px solid var(--secondary);
     }
   }
 
