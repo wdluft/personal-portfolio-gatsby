@@ -167,8 +167,8 @@ const ProjectsTabWrapper = styled.section`
   }
 
   .react-tabs__tab {
-    background: var(--gray-7);
-    color: var(--gray-1);
+    background: var(--black);
+    color: var(--white);
     border: 1px solid transparent;
     border-radius: 5px 5px 0 0;
     margin-right: 3px;
@@ -181,7 +181,7 @@ const ProjectsTabWrapper = styled.section`
   }
 
   .react-tabs__tab--selected {
-    border: 1px solid var(--tertiary-3);
+    border: 1px solid var(--tertiary);
   }
 `
 
@@ -191,9 +191,9 @@ const TabPannelWrapper = styled.div`
 
   padding-top: 15px;
   border-radius: 0 5px 5px 5px;
-  background: var(--gray-7);
+  background: var(--black);
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.25), var(--elevation-3);
-  border-top: var(--tertiary-3) solid 10px;
+  border-top: var(--tertiary) solid 10px;
   padding-bottom: 1.5rem;
   margin-bottom: 3rem;
 
@@ -209,7 +209,7 @@ const TabPannelWrapper = styled.div`
     padding-left: 1rem;
 
     h3 {
-      color: var(--tertiary-3);
+      color: var(--tertiary);
     }
 
     p {

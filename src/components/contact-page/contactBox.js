@@ -17,11 +17,11 @@ const StyledContactBox = styled.div`
   font-size: var(--mediumFontSize);
   font-weight: bold;
   letter-spacing: 0.15rem;
-  border: 3px var(--gray-1) solid;
+  border: 3px var(--lightGray) solid;
   padding: 1rem 1.75rem;
   margin-bottom: 2rem;
   transition: padding 0.5s;
-  background: var(--secondary-3);
+  background: var(--secondary);
   box-shadow: var(--elevation-4);
   border-radius: 5px;
   cursor: pointer;

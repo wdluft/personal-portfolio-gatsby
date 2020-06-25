@@ -38,7 +38,7 @@ const SectionWrapper = styled.section`
   align-items: center;
 
   .section__card {
-    background: var(--gray-7);
+    background: var(--black);
     max-width: 748px;
     margin: 10vh 32px 0;
     border-radius: 5px;
@@ -51,7 +51,7 @@ const SectionWrapper = styled.section`
   }
 
   .section__span {
-    color: var(--primary-3);
+    color: var(--primary);
   }
 
   .section_p {
